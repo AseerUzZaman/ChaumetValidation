@@ -24,12 +24,13 @@ section.header {
 }
 
 section.header img {
-  width: 150px;
+  width: 100px;
 }
 
 section.header h1 {
   text-transform: uppercase;
   color: #0d2979;
+  font-size: 2rem;
 }
 
 section.table {
@@ -72,8 +73,10 @@ section.buttons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 20px;
 }
 
 section.buttons a.button {
@@ -83,8 +86,9 @@ section.buttons a.button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   padding: 10px;
   width: 200px;
   border-radius: 5px;

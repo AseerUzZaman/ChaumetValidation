@@ -26,11 +26,12 @@ section.header {
   justify-content: space-between;
 
   img {
-    width: 150px;
+    width: 100px;
   }
   h1 {
     text-transform: uppercase;
     color: $primary-dark;
+    font-size: 2rem;
   }
 }
 
@@ -69,12 +70,13 @@ section.table {
 section.buttons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-top: 20px;
 
   a.button {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 10px;
     width: 200px;
     border-radius: 5px;
