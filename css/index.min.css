@@ -1,14 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Inter:wght@200;300;400;500&display=swap");
+@font-face {
+  font-family: Agaramond;
+  src: url(../fonts/AgaramondPro-Regular.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Alef, sans-serif;
+  font-family: Agaramond, serif;
 }
 
 body {
   padding: 50px;
+}
+
+.modal {
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  color: #132c70;
+  text-align: center;
+  padding: 30px 50px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.modal.close {
+  display: none;
+}
+
+.modal h1 {
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+
+.modal p {
+  margin: 10px 0;
+  font-size: 1.5rem;
 }
 
 section.header {
@@ -39,6 +73,7 @@ section.table {
   border-radius: 10px;
   margin: 40px 0;
   padding: 0 50px;
+  font-size: 1.2rem;
 }
 
 section.table table {
@@ -77,6 +112,7 @@ section.buttons {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 20px;
+  font-size: 1.3rem;
 }
 
 section.buttons a.button {
@@ -93,8 +129,8 @@ section.buttons a.button {
   width: 200px;
   border-radius: 5px;
   text-decoration: none;
-  font-family: Inter, sans-serif;
   font-weight: 700;
+  cursor: pointer;
 }
 
 section.buttons a.button img {

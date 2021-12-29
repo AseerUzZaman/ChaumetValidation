@@ -11,6 +11,15 @@
 
 <body>
 
+    <div class="validate modal close">
+        <h1>Validated</h1>
+        <p>This person is marked present</p>
+    </div>
+    <div class="discard modal close">
+        <h1>Discarded</h1>
+        <p>This person is marked absent</p>
+    </div>
+
     <section class="header">
         <img src="./images/logo.png" alt="Chaumet">
         <h1>Validation</h1>
@@ -52,9 +61,12 @@
     </section>
 
     <section class="buttons">
-        <a href="" class="discard button"><img src="./images/close.png" alt="Discard">Discard</a>
-        <a href="" class="validate button"><img src="./images/check.png" alt="Validate">Validate</a>
+        <a onclick="openDiscardModal()" class="discard button"><img src="./images/close.png" alt="Discard">Discard</a>
+        <a onclick="openValidateModal()" class="validate button"><img src="./images/check.png"
+                alt="Validate">Validate</a>
     </section>
+
+    <script src="Javascript/main.js"></script>
 </body>
 
 </html>
