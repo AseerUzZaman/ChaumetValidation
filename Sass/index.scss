@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Inter:wght@200;300;400;500&display=swap");
+
+$grey-dark: #aaa;
+$grey-buttons: #e0e0e0;
+$primary-light: #1645c5;
+$primary-main: #132c70;
+$primary-dark: #0d2979;
+
+$font-alef: Alef, sans-serif;
+$font-inter: Inter, sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-alef;
+}
+
+body {
+  padding: 50px;
+}
+
+section.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 150px;
+  }
+  h1 {
+    text-transform: uppercase;
+    color: $primary-dark;
+  }
+}
+
+section.table {
+  width: 100%;
+  border: 1px solid $grey-dark;
+  border-radius: 10px;
+  margin: 40px 0;
+  padding: 0 50px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+      border-bottom: 1px solid $grey-dark;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      td {
+        padding: 40px 0;
+
+        &.key {
+          color: $primary-main;
+        }
+        &.value {
+          color: #555;
+        }
+      }
+    }
+  }
+}
+
+section.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: $font-inter;
+    font-weight: 700;
+
+    img {
+      width: 15px;
+    }
+  }
+  a.discard {
+    background-color: $grey-buttons;
+    color: #444;
+  }
+  a.validate {
+    background-color: $primary-main;
+    color: white;
+  }
+}
